@@ -1,0 +1,16 @@
+{{template "base" .}}
+ 
+{{define "title"}}Домашняя страница{{end}}
+ 
+{{define "main"}}
+    <h2>Создать заметку2</h2>
+    <form method="POST" action="create">
+            <label>Название заметки title</label><br>
+            <input type="text" name="title" /><br><br>
+            <label>Заметка content</label><br>
+            <input type="text" name="content" /><br><br>
+            <label>Время expires</label><br>
+            <input type="number" name="expires" /><br><br>
+            <input type="submit" value="Отправить" />
+        <p>Здесь ничего нет... пока что!</p>
+{{end}}
